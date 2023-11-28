@@ -1,0 +1,76 @@
+a:2:{i:0;i:1693369016;i:1;a:12:{s:2:"id";s:2:"18";s:7:"options";s:1549:"{"mailertype":"1","ip_host":"210.211.108.102","port_host":"25","secure_host":"tls","email_host":"contact@goicuoc4gmobifone.com","password_host":"E0xzmxc6","host_gmail":"smtp.gmail.com","port_gmail":"587","secure_gmail":"tls","email_gmail":"autosendnoreply01@gmail.com","password_gmail":"ntfocjyshxgoxqbg","lang_default":"vi","diachi":"202 \u0110\u01b0\u1eddng 3\/2, Khu ph\u1ed1 1, Ph\u01b0\u1eddng 1, Th\u1ecb X\u00e3 Cai L\u1eady, T\u1ec9nh Ti\u1ec1n Giang","email":"vienthongtaiphat.cailay@gmail.com","hotline":"0707 19 20 21","dienthoai":"0707 19 20 21","zalo":"https:\/\/zalo.me\/4054682374558282299","oaidzalo":"4054682374558282299","website":"http:\/\/goicuoc4gmobifone.com","fanpage":"https:\/\/www.facebook.com\/vienthongtaiphatchinhanhcailay","toado_iframe":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3920.060605683832!2d106.61246901487095!3d10.729809092353207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752dc28b36dec7%3A0xcedc0fd87927b0a!2zSOG6u20gNDUgTMOqIEPGoSwgQW4gTOG6oWMsIELDrG5oIFTDom4sIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1661349280470!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>","toado":"https:\/\/goo.gl\/maps\/AYnVYuTt39x6JaLL6","slogan":"Giao h\u00e0ng nhanh ch\u00f3ng tr\u00ean to\u00e0n qu\u1ed1c","giolamviec":"T\u1eeb 8h \u0111\u1ebfn 20h","copyright":"Copyright \u00a9  VIEN THONG TAI PHAT.  All rights reserved. Design by Nina"}";s:10:"mastertool";s:120:"&lt;meta name=&quot;google-site-verification&quot; content=&quot;_jYzWARAeiq3bUwDKC0XoFGJWjP0h_Qepiw486dZBI8&quot; /&gt;";s:6:"headjs";s:4209:"&lt;script type='text/javascript'&gt;
+//&lt;![CDATA[
+var pictureSrc =&quot;https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png&quot;; //the location of the snowflakes
+var pictureWidth = 15; //the width of the snowflakes
+var pictureHeight = 15; //the height of the snowflakes
+var numFlakes = 10; //the number of snowflakes
+var downSpeed = 0.01; //the falling speed of snowflakes (portion of screen per 100 ms)
+var lrFlakes = 10; //the speed that the snowflakes should swing from side to side
+
+
+if( typeof( numFlakes ) != 'number' || Math.round( numFlakes ) != numFlakes || numFlakes &lt; 1 ) { numFlakes = 10; }
+
+//draw the snowflakes
+for( var x = 0; x &lt; numFlakes; x++ ) {
+if( document.layers ) { //releave NS4 bug
+document.write('&lt;layer id=&quot;snFlkDiv'+x+'&quot;&gt;&lt;imgsrc=&quot;'+pictureSrc+'&quot; height=&quot;'+pictureHeight+'&quot;width=&quot;'+pictureWidth+'&quot; alt=&quot;*&quot; border=&quot;0&quot;&gt;&lt;/layer&gt;');
+} else {
+document.write('&lt;div style=&quot;position:absolute; z-index:9999;&quot;id=&quot;snFlkDiv'+x+'&quot;&gt;&lt;img src=&quot;'+pictureSrc+'&quot;height=&quot;'+pictureHeight+'&quot; width=&quot;'+pictureWidth+'&quot; alt=&quot;*&quot;border=&quot;0&quot;&gt;&lt;/div&gt;');
+}
+}
+
+//calculate initial positions (in portions of browser window size)
+var xcoords = new Array(), ycoords = new Array(), snFlkTemp;
+for( var x = 0; x &lt; numFlakes; x++ ) {
+xcoords[x] = ( x + 1 ) / ( numFlakes + 1 );
+do { snFlkTemp = Math.round( ( numFlakes - 1 ) * Math.random() );
+} while( typeof( ycoords[snFlkTemp] ) == 'number' );
+ycoords[snFlkTemp] = x / numFlakes;
+}
+
+//now animate
+function flakeFall() {
+if( !getRefToDivNest('snFlkDiv0') ) { return; }
+var scrWidth = 0, scrHeight = 0, scrollHeight = 0, scrollWidth = 0;
+//find screen settings for all variations. doing this every time allows for resizing and scrolling
+if( typeof( window.innerWidth ) == 'number' ) { scrWidth = window.innerWidth; scrHeight = window.innerHeight; } else {
+if( document.documentElement &amp;&amp; (document.documentElement.clientWidth ||document.documentElement.clientHeight ) ) {
+scrWidth = document.documentElement.clientWidth; scrHeight = document.documentElement.clientHeight; } else {
+if( document.body &amp;&amp; ( document.body.clientWidth || document.body.clientHeight ) ) {
+scrWidth = document.body.clientWidth; scrHeight = document.body.clientHeight; } } }
+if( typeof( window.pageYOffset ) == 'number' ) { scrollHeight = pageYOffset; scrollWidth = pageXOffset; } else {
+if( document.body &amp;&amp; ( document.body.scrollLeft ||document.body.scrollTop ) ) { scrollHeight = document.body.scrollTop;scrollWidth = document.body.scrollLeft; } else {
+if(document.documentElement &amp;&amp; (document.documentElement.scrollLeft ||document.documentElement.scrollTop ) ) { scrollHeight =document.documentElement.scrollTop; scrollWidth =document.documentElement.scrollLeft; } }
+}
+//move the snowflakes to their new position
+for( var x = 0; x &lt; numFlakes; x++ ) {
+if( ycoords[x] * scrHeight &gt; scrHeight - pictureHeight ) { ycoords[x] = 0; }
+var divRef = getRefToDivNest('snFlkDiv'+x); if( !divRef ) { return; }
+if( divRef.style ) { divRef = divRef.style; } var oPix = document.childNodes ? 'px' : 0;
+divRef.top = ( Math.round( ycoords[x] * scrHeight ) + scrollHeight ) + oPix;
+divRef.left = ( Math.round( ( ( xcoords[x] * scrWidth ) - (pictureWidth / 2 ) ) + ( ( scrWidth / ( ( numFlakes + 1 ) * 4 ) ) * (Math.sin( lrFlakes * ycoords[x] ) - Math.sin( 3 * lrFlakes * ycoords[x]) ) ) ) + scrollWidth ) + oPix;
+ycoords[x] += downSpeed;
+}
+}
+
+//DHTML handlers
+function getRefToDivNest(divName) {
+if( document.layers ) { return document.layers[divName]; } //NS4
+if( document[divName] ) { return document[divName]; } //NS4 also
+if( document.getElementById ) { return document.getElementById(divName); } //DOM (IE5+, NS6+, Mozilla0.9+, Opera)
+if( document.all ) { return document.all[divName]; } //Proprietary DOM - IE4
+return false;
+}
+
+window.setInterval('flakeFall();',100);
+//]]&gt;
+&lt;/script&gt;  
+&lt;script src=&quot;https://uhchat.net/code.php?f=b2c4a3&quot;&gt;&lt;/script&gt;";s:6:"bodyjs";s:82:"&lt;script src=&quot;https://uhchat.net/code.php?f=b2c4a3&quot;&gt;&lt;/script&gt;";s:5:"tenvi";s:58:"Dịch vụ Mobifone - Đăng ký gói cước 4g mobifone";s:5:"tenen";s:12:"Company name";s:5:"tencn";s:0:"";s:5:"tenko";s:0:"";s:5:"tenjp";s:0:"";s:5:"tenkh";s:0:"";s:9:"analytics";s:335:"&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-T4XPWC31GP&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T4XPWC31GP');
+&lt;/script&gt;";}}
