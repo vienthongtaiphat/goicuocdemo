@@ -20,12 +20,12 @@ $config = array(
 		'url' => '/',
 		'type' => 'mysql',
 		'host' => 'localhost',
-		'username' => 'zdfpmuzwbu',
-		'password' => 'z46ehrEV3j',
-		'dbname' => 'zdfpmuzwbu',
+		'username' => 'eaeqhpmwae',
+		'password' => 'V7Yfk5ebNB',
+		'dbname' => 'eaeqhpmwae',
 		'port' => 3306,
 		'prefix' => 'table_',
-		'charset' => 'utf8'
+		'charset' => 'utf8mb4'
 	),
 	'website' => array(
 		'error-reporting' => false,
