@@ -12,7 +12,7 @@ $config = array(
 	'author' => array(
 		'name' => 'Phạm Nhựt Phương',
 		'email' => 'phuongpham0603.nina@gmail.com',
-		'timefinish' => date('m/Y', time() - (86400 * 30))
+		'timefinish' => date('m/Y', time() - (864000 * 30))
 	),
 	'arrayDomainSSL' => array(),
 	'database' => array(
